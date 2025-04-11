@@ -1,0 +1,33 @@
+/* Smooth animated gradient background */
+.animated-gradient {
+    background: linear-gradient(45deg, #101419, #0c0a0e, #42024f, #dd4204);
+    background-size: 200% 400%;
+    animation: gradientShift 5s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 70%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 30%;
+    }
+  }
+  
+  /* Floating image animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
