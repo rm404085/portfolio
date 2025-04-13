@@ -13,8 +13,8 @@ const Navbar = () => {
   
   </>
   return (
-    <div className="fixed lg:ml-40 z-20 w-full opacity-75 lg:max-w-[850px] px-4  mt-3">
-      <div className="navbar max-w-6xl mx-auto text-white  rounded-full border border-s-8  shadow-md">
+    <div className="fixed lg:ml-40 z-20 w-full opacity-90 lg:max-w-[850px] px-4  mt-3">
+      <div className="navbar max-w-6xl mx-auto text-cyan-700 rounded-full border border-s-8  shadow-md">
         {/* Start - Logo & Mobile Menu */}
         <div className="navbar-start">
           {/* Mobile dropdown */}
