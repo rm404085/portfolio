@@ -2,7 +2,7 @@
 import { Fa42Group } from "react-icons/fa6";
 const Footer = () => {
     return (
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <footer className="footer mt-96  sm:footer-horizontal bg-neutral text-neutral-content p-10">
   <aside>
     <svg
       width="50"
