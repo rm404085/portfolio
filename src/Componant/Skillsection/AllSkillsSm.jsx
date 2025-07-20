@@ -61,7 +61,7 @@ const AllSkillsSm = () => {
               key={index}
               className="flex flex-col items-center"
             >
-              <item.icon className="text-7xl text-orange" />
+              <item.icon className="text-8xl border border-orange-700 border-s-4 text-orange-800" />
               <p className="text-center mt-4">{item.skill}</p>
             </motion.div>
           );

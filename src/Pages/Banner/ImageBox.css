@@ -88,3 +88,41 @@
     border-radius: 25px;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .box {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .content {
+      inset: 20px;
+      border-width: 4px;
+    }
+  
+    .content h2 {
+      font-size: 1.2em;
+    }
+  
+    .content a {
+      font-size: 0.85rem;
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .content {
+      inset: 15px;
+      border-width: 3px;
+    }
+  
+    .content h2 {
+      font-size: 1em;
+    }
+  }
+  

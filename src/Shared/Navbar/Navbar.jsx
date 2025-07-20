@@ -16,7 +16,7 @@ const Navbar = () => {
   
   </>
   return (
-    <div className="fixed lg:ml-40 z-20 w-full opacity-90 lg:max-w-[900px] px-4  mt-3">
+    <div className="fixed lg:ml-32 z-20 w-full opacity-90 lg:max-w-[900px] px-4  mt-3">
       <div className="navbar max-w-6xl mx-auto text-cyan-700 rounded-full border border-s-8  shadow-md">
         {/* Start - Logo & Mobile Menu */}
         <div className="navbar-start">
@@ -70,7 +70,7 @@ const Navbar = () => {
 
         {/* End - DarkMode or Button */}
         <div className="navbar-end">
-       <div className="relative w-40 h-16 shadow-[16px 16px 20px #000008c] overflow-hidden before:absolute before:top-[-90%] before:right-[-80%] before:bottom-[-80%] before:left-[-80%] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow  ">
+       <div className="relative w-40 h-16  shadow-[16px 16px 20px #000008c] overflow-hidden before:absolute before:top-[-90%] before:right-[-80%] before:bottom-[-80%] before:left-[-80%] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow  ">
        <button className="absolute flex justify-center text-center mt-2 align-middle top-1 bottom-1 left-2 right-2 rounded-full lg:px-4 text-white   bg-gradient-to-r from-slate-900 to-purple-700 ">Hire Me
         <FaLocationArrow className="mt-1 ml-1 text-yellow-500"></FaLocationArrow>
          </button>

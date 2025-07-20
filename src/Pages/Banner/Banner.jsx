@@ -15,13 +15,13 @@ const Banner = () => {
 
         {/* ——— Image + Glow Wrapper ——— */}
         <motion.div
-          className="box"
+          className="box  mt-20"
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
         >
-          <div className="content">
+          <div className="content ">
             <img src={myself} alt="Profile" />
             <h2>
               Someone Famous
@@ -36,7 +36,7 @@ const Banner = () => {
 
         {/* ——— Text & Buttons ——— */}
         <motion.div
-          className="mt-10"
+          className="mt-20 "
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
@@ -47,7 +47,7 @@ const Banner = () => {
           </p>
 
           <motion.h1
-            className="lg:text-5xl text-4xl lg:mr-20 uppercase font-bold"
+            className="lg:text-5xl text-2xl lg:mr-20 uppercase font-bold"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1, y: 10 }}
             transition={{

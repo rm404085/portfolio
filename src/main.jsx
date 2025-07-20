@@ -13,7 +13,7 @@ import DarkModeToggle from './Shared/DarkMode/DarkModeToggle.jsx';
 createRoot(document.getElementById('root')).render(
  
    <StrictMode>
-     <div className='max-w-[1100px] min-h-full mx-auto'>
+     <div className='max-w-[1300px] min-h-full mx-auto'>
      
      
       
