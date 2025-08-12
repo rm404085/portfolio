@@ -7,6 +7,7 @@ import SkillsMain from '../../Componant/Skillsection/SkillsMain';
 import SubSkill from '../../Componant/Skillsection/SubSkill';
 import ExperienceMain from '../../Componant/Experiene/ExperienceMain';
 import ProjectsMain from '../../Componant/ProjectSection/ProjectMain';
+import ContactMeMain from '../../Componant/ContactUs/ContactMeMain';
 
 const Home = () => {
     return (
@@ -23,8 +24,14 @@ const Home = () => {
       <div className='mt-32'>
         <ExperienceMain></ExperienceMain>
       </div>
+      
             
-          <ProjectsMain></ProjectsMain>
+         <div>
+           <ProjectsMain></ProjectsMain>
+         </div>
+         <div>
+        <ContactMeMain></ContactMeMain>
+      </div>
         
       </div>
     );

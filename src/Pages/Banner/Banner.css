@@ -1,6 +1,6 @@
 /* Smooth animated gradient background */
 .animated-gradient {
-    background: linear-gradient(60deg, #4174b2, #28014f, #3f014c, #dd4204);
+    background: linear-gradient(60deg, #7bbd2a, #b5bb06, #1b064a, #fa4c07);
     background-size: 300% 400%;
     animation: gradientShift 5s ease infinite;
   }

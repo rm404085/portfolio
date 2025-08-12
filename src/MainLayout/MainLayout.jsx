@@ -9,14 +9,7 @@ const MainLayout = () => {
     return (
     
             <div className="min-h-screen  bg-white text-black dark:bg-gray-900 dark:text-white transition-all duration-300">
-      
-      
-      {/* 🔘 Toggle Button ekhane bosabo */}
-     <div className="fixed">
-     <DarkModeToggle />
-     </div>
-
-      <div>
+       <div>
         
       <Navbar></Navbar>
       <Outlet></Outlet>

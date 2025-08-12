@@ -4,33 +4,52 @@ import ProjectsText from "./ProjectText";
 import SingleProject from "./SingleProject";
 
 const projects = [
-  {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "/src/assets/images/website-img-1.jpg",
-    link: "#",
-  },
+
   {
     name: "Moola App",
     year: "Sept2022",
     align: "left",
     image: "/src/assets/images/website-img-2.webp",
-    link: "#",
+    link: "https://celadon-empanada-456bdc.netlify.app/",
   },
+
+  {
+    name: "Vacation of Africa",
+    year: "Mar2022",
+    align: "right",
+    image: "/src/assets/images/website-img-1.jpg",
+    link: "https://inspiring-bombolone-d0ed68.netlify.app",
+  },
+  {
+    name: "Vacation of Africa",
+    year: "Mar2022",
+    align: "right",
+    image: "/src/assets/images/website-img-1.jpg",
+    link: "https://aquamarine-youtiao-34a16d.netlify.app/",
+  },
+  
+  
   {
     name: "Tourzania",
     year: "Jan2023",
     align: "right",
     image: "/src/assets/images/website-img-3.jpg",
-    link: "#",
+    link: "https://delicate-rabanadas-6c14d7.netlify.app/",
   },
+   {
+    name: "Tourzania",
+    year: "Jan2023",
+    align: "right",
+    image: "/src/assets/images/website-img-3.jpg",
+    link: "https://celebrated-kleicha-28b0f1.netlify.app/",
+  },
+
   {
     name: "Bank of Luck",
     year: "May2024",
     align: "left",
     image: "/src/assets/images/website-img-4.jpg",
-    link: "#",
+    link: "https://playful-cascaron-550a47.netlify.app/",
   },
 ];
 
@@ -54,6 +73,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link}
             />
           );
         })}

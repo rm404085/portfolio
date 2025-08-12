@@ -19,7 +19,7 @@ const Banner = () => {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.8 }}
         >
           <div className="content ">
             <img src={myself} alt="Profile" />
@@ -80,7 +80,7 @@ const Banner = () => {
             A Passionate Web Developer with 1 Year of Front-End Experience
           </p>
 
-          <div className="flex gap-3 mb-4 text-xl text-blue-800">
+          <div className="flex gap-4 mb-6 font-bold text-xl text-blue-800">
             <NavLink to="https://www.facebook.com/mdrasel.mahmud.16568548" target="_blank">
               <FaFacebook />
             </NavLink>

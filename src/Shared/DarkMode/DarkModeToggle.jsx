@@ -19,10 +19,10 @@ const DarkModeToggle = () => {
   }, [dark]);
 
   return (
-    <div className='relative w-32 h-10  overflow-hidden shadow-md before:content-[""] before:absolute before:inset-0 before:rounded lg:before:border-2 lg:before:border-blue-400 lg:before:animate-pulse'>
+    <div className='relative w-32 h-12 rounded-xl   overflow-hidden shadow-md before:content-[""] before:absolute before:inset-0 before:rounded lg:before:border-2 lg:before:border-blue-400 lg:before:animate-pulse'>
   <button
     onClick={() => setDark(!dark)}
-    className="absolute top-1 bottom-1 left-2 right-2 flex justify-center items-center rounded lg:bg-gradient-to-r from-slate-800 to-slate-900 text-white"
+    className="absolute top-1 bottom-1  left-2 right-2 flex justify-center items-center rounded lg:bg-gradient-to-r from-slate-800 to-slate-900"
   >
     {dark ? '☀️ Light' : '🌙 Dark'}
   </button>
