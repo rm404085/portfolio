@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 // You can add social media icons like this:
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import fotter from "../../assets/images/icons8-portfolio-64.png"
 
 const FooterMain = () => {
   const footerLinks = [
@@ -18,9 +19,11 @@ const FooterMain = () => {
       {/* Footer content */}
       <div className="max-w-[1200px] mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 md:flex justify-between items-center gap-6">
         {/* Logo / Title */}
+        <img src={fotter} alt="Protfolio" />
         <p className="text-2xl font-semibold text-white">
-          RaselMahmud Portfolio
+          RaselMahmud PF
         </p>
+        
 
         {/* Navigation Links */}
         <ul className="flex flex-wrap gap-4 text-lg">
@@ -43,7 +46,7 @@ const FooterMain = () => {
         {/* Social Media Icons */}
         <div className="flex gap-4 text-xl text-gray-400">
           <a
-            href="https://github.com/rm404085/PH-Tour-Management-Project"
+            href="https://github.com/rm404085"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
@@ -51,7 +54,7 @@ const FooterMain = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/rasel-mahmud-1ab0b5333/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
@@ -59,7 +62,7 @@ const FooterMain = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/mdrasel.mahmud.16568548"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"

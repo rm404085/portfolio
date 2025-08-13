@@ -6,50 +6,57 @@ import SingleProject from "./SingleProject";
 const projects = [
 
   {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "Gadget Heaven",
+    year: "Sept2024",
     align: "left",
-    image: "/src/assets/images/website-img-2.webp",
+    image: "/src/assets/images/website-img-1.jpg",
     link: "https://celadon-empanada-456bdc.netlify.app/",
+    uses: "Html, CSS, Tailwind, React, Javascript",
   },
 
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Learn Vocabulary",
+    year: "Mar2025",
     align: "right",
-    image: "/src/assets/images/website-img-1.jpg",
+    image: "/src/assets/images/vocabulary.png",
     link: "https://inspiring-bombolone-d0ed68.netlify.app",
+    uses: "Html, Css, Tailwind, React, Firebase, Mongodb",
   },
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
+    name: "Dream 11 Cricket Team",
+    year: "Mar2024",
     align: "right",
-    image: "/src/assets/images/website-img-1.jpg",
+    image: "/src/assets/images/dream11-2.jpg",
     link: "https://aquamarine-youtiao-34a16d.netlify.app/",
+    uses: "Html, Css, Javascript, React",
   },
   
-  
   {
-    name: "Tourzania",
-    year: "Jan2023",
-    align: "right",
-    image: "/src/assets/images/website-img-3.jpg",
-    link: "https://delicate-rabanadas-6c14d7.netlify.app/",
-  },
-   {
-    name: "Tourzania",
-    year: "Jan2023",
-    align: "right",
-    image: "/src/assets/images/website-img-3.jpg",
-    link: "https://celebrated-kleicha-28b0f1.netlify.app/",
-  },
-
-  {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "Tour Management System",
+    year: "May2025",
     align: "left",
     image: "/src/assets/images/website-img-4.jpg",
     link: "https://playful-cascaron-550a47.netlify.app/",
+    uses: "Html, Css, Tailwind, React, Node.js, Express.js, Mongodb,"
+  },
+  
+   {
+    name: "History Fact Project ",
+    year: "Jan2025",
+    align: "right",
+    image: "/src/assets/images/website-img-3.jpg",
+    link: "https://celebrated-kleicha-28b0f1.netlify.app/",
+    uses: "Html, Css, Tailwind, React, Node.js, Express.js, Mongodb"
+  },
+
+  
+  {
+    name: "Paddy Animals",
+    year: "Jan2024",
+    align: "right",
+    image: "/src/assets/images/R (1).jpeg",
+    link: "https://delicate-rabanadas-6c14d7.netlify.app/",
+    uses: "Html, Css, Javascript"
   },
 ];
 
@@ -74,6 +81,7 @@ const ProjectsMain = () => {
               align={project.align}
               image={project.image}
               link={project.link}
+              uses={project.uses}
             />
           );
         })}

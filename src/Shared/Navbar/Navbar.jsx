@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../Componant/AboutMeSection/FramerMotion/variants";
 import "./Navbar.css";
+import resume from "../../assets/resume/my_resume.pdf"
 
 const Navbar = () => {
   const links = (
@@ -16,16 +17,22 @@ const Navbar = () => {
         <li>Home</li>
       </NavLink>
       <NavLink
-        to="/aboutUs"
+        to="/aboutme"
         className="hover:text-lg transition-all hover:underline"
       >
-        <li>About Us</li>
+        <li>About Me</li>
       </NavLink>
       <NavLink
         to="/contact"
         className="hover:text-lg transition-all hover:underline"
       >
         <li>Contact</li>
+      </NavLink>
+       <NavLink
+        to="/experience"
+        className="hover:text-lg transition-all hover:underline"
+      >
+        <li>Experience</li>
       </NavLink>
     </>
   );
@@ -64,7 +71,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className="flex items-center gap-2 sm:gap-3">
-            <img src={portfolio} alt="logo" className="w-8 h-8 hidden sm:w-10 sm:h-10" />
+            <img src={portfolio} alt="logo" className="w-8 h-8 md:block border-2 hidden sm:w-10 sm:h-10" />
             <h1 className="hidden md:block text-lg sm:text-xl font-bold">
               RASEL MAHMUD
             </h1>
@@ -87,11 +94,13 @@ const Navbar = () => {
         <div className="navbar-end flex items-center gap-2 sm:gap-4">
           <DarkModeToggle />
           <div className="relative  w-28 sm:w-36 md:w-40 h-10 sm:h-12 md:h-14 overflow-hidden rounded-xl border border-gray-200 shadow-md before:absolute before:top-[-90%] before:right-[-80%] before:bottom-[-80%] before:left-[-80%] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow">
-            <button className="absolute  flex items-center justify-center w-full h-full rounded-xl text-white text-sm sm:text-base font-semibold bg-gradient-to-r from-slate-900 to-purple-700 hover:scale-105 transition-transform">
-              Hire Me
+            <a href={resume }>
+              <button className="absolute  flex items-center justify-center w-full h-full rounded-xl text-white text-sm sm:text-base font-semibold bg-gradient-to-r from-slate-900 to-purple-700 hover:scale-105 transition-transform">
+              Hire Me 
               <FaLocationArrow className="ml-1 hidden md:block text-yellow-400" />
               
             </button>
+            </a>
           </div>
         </div>
       </div>

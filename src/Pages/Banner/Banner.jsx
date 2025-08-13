@@ -6,7 +6,8 @@ import { motion } from 'framer-motion';
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom';
 import { fadeIn } from '../../Componant/AboutMeSection/FramerMotion/variants';
-import myself from '../../assets/images/email-image.png';
+import myimg from "../../assets/images/portfolio-image.jpg"
+import resume from "../../assets/resume/my_resume.pdf"
 
 const Banner = () => {
   return (
@@ -22,7 +23,7 @@ const Banner = () => {
           viewport={{ once: false, amount: 0.8 }}
         >
           <div className="content ">
-            <img src={myself} alt="Profile" />
+            <img src={myimg} alt="Profile" />
             <h2>
               Someone Famous
               <br />
@@ -43,7 +44,7 @@ const Banner = () => {
           viewport={{ once: false, amount: 0.7 }}
         >
           <p className="uppercase text-slate-500">
-            front-end web developer
+            full-stack web developer
           </p>
 
           <motion.h1
@@ -77,17 +78,17 @@ const Banner = () => {
           </motion.h1>
 
           <p className="py-6 mt-3 text-zinc-600 text-lg">
-            A Passionate Web Developer with 1 Year of Front-End Experience
+            A Passionate Web Developer with 1.5 Year of Front-End Experience
           </p>
 
           <div className="flex gap-4 mb-6 font-bold text-xl text-blue-800">
             <NavLink to="https://www.facebook.com/mdrasel.mahmud.16568548" target="_blank">
               <FaFacebook />
             </NavLink>
-            <NavLink to="https://www.linkedin.com/feed/" target="_blank">
+            <NavLink to="https://www.linkedin.com/in/rasel-mahmud-1ab0b5333/" target="_blank">
               <FaLinkedin />
             </NavLink>
-            <a href="https://github.com/yourusername" target="_blank">
+            <a href="https://github.com/rm404085" target="_blank">
               <FaGithub />
             </a>
             <a href="https://wa.me/yourwhatsapplink" target="_blank">
@@ -95,7 +96,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <button className="btnn">Download Resume</button>
+          <a href={resume}><button className="btnn">Download Resume</button></a>
         </motion.div>
       </div>
     </div>
