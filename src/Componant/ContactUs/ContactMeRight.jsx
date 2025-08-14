@@ -9,7 +9,7 @@ const ContactMeRight = () => {
       <img
         src={ContactMailImage}
         alt="email image"
-        className="max-w-[300px]"
+        className="max-w-full"
       />
       <ContactInfo />
       <ContactSocial />

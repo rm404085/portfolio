@@ -14,16 +14,16 @@ const SingleProject = ({ name, year, align, image, link, uses }) => {
         align === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } justify-end sm:flex-col`}
     >
-      <div className="ml-14">
+      <div className="lg:ml-14 flex justify-center items-center flex-col">
         <h2 className="md:text-3xl text-2xl text-orange-700 ">{name}</h2>
         <h2
-          className={`text-xl font-thin mt-3  font-special text-center ${
+          className={`text-xl font-thin m-3  font-special text-center ${
             align === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
           {year}
         </h2>
-        <p className="md:text-xl text-cyan-100 ">
+        <p className="md:text-xl flex justify-center items-center flex-row text-cyan-800 ">
           {uses}
         </p>
        <a

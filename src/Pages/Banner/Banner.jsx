@@ -6,30 +6,31 @@ import { motion } from 'framer-motion';
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom';
 import { fadeIn } from '../../Componant/AboutMeSection/FramerMotion/variants';
-import myimg from "../../assets/images/portfolio-image.jpg"
+
+import image from "../../../public/myimage.jpg"
 import resume from "../../assets/resume/my_resume.pdf"
 
 const Banner = () => {
   return (
-    <div className="hero animated-gradient text-white mb-36 min-h-screen">
+    <div className="hero animated-gradient  text-white mb-36 min-h-screen">
       <div className="hero-content flex-col animate-float lg:flex-row-reverse">
 
         {/* ——— Image + Glow Wrapper ——— */}
         <motion.div
-          className="box  mt-20"
+          className="box  mt-10"
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.8 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           <div className="content ">
-            <img src={myimg} alt="Profile" />
+            <img src={image} alt="Profile" />
             <h2>
               Someone Famous
               <br />
               <span>Web developer</span>
             </h2>
-            <a className="underline" href="">
+            <a className="underline" href={resume}>
               Hire Me
             </a>
           </div>
@@ -37,11 +38,11 @@ const Banner = () => {
 
         {/* ——— Text & Buttons ——— */}
         <motion.div
-          className="mt-20 "
+          className="mt-10 "
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <p className="uppercase text-slate-500">
             full-stack web developer

@@ -1,13 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import aboutimg from "../../assets/images/IMG_20241126_143058299_PORTRAIT.jpg"
-
+import aboutimg from "../../assets/images/IMG_20241126_143058299_PORTRAIT.jpg";
+import portfolioimg from "../../assets/images/portfolio-image.jpg"
 const AboutMe = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center px-6 py-16">
-      <div className="max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center">
-        
+    <div
+      className="min-h-screen relative flex items-center justify-center px-6 py-16 text-white"
+      style={{
+        backgroundImage: `url(${aboutimg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+
+      <div className="relative max-w-5xl w-full grid md:grid-cols-2 gap-12 items-center z-10">
         {/* Profile Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -16,7 +25,7 @@ const AboutMe = () => {
           className="flex justify-center"
         >
           <img
-            src={aboutimg}
+            src={portfolioimg}
             alt="Profile"
             className="rounded-2xl shadow-lg border-4 border-gray-700 w-72 h-72 object-cover"
           />
@@ -28,18 +37,21 @@ const AboutMe = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h1 className="text-4xl font-bold mb-4">Hi, I'm Rasel Mahmud 👋</h1>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            I’m a passionate <span className="text-indigo-400">Full Stack Developer</span> 
-             who loves building user-friendly web applications. With experience in 
-            <span className="text-indigo-400"> React.js</span>, 
-            <span className="text-indigo-400"> Next.js</span>, and 
-            <span className="text-indigo-400"> MERN stack</span>, 
-            I aim to craft clean, modern, and high-performing applications.
+          <h1 className="text-4xl font-bold mb-4 text-indigo-300">
+            Hi, I'm Rasel Mahmud 
+          </h1>
+          <p className="text-gray-200 leading-relaxed mb-6">
+            I’m a passionate{" "}
+            <span className="text-pink-400">Full Stack Developer</span> who
+            loves building user-friendly web applications. With experience in{" "}
+            <span className="text-yellow-300">React.js</span>,{" "}
+            <span className="text-green-300">Next.js</span>, and{" "}
+            <span className="text-blue-300">MERN stack</span>, I aim to craft
+            clean, modern, and high-performing applications.
           </p>
           <p className="text-gray-300 leading-relaxed mb-6">
-            Outside of coding, I enjoy learning new tech stacks, exploring UI/UX design trends, 
-            and contributing to open-source projects.
+            Outside of coding, I enjoy learning new tech stacks, exploring UI/UX
+            design trends, and contributing to open-source projects.
           </p>
 
           {/* Social Links */}

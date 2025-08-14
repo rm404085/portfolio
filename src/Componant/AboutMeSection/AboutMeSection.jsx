@@ -3,6 +3,7 @@ import AboutMeText from './AboutMeText';
 import AboutMeImage from './AboutMeImage';
 import { motion } from 'framer-motion';
 import { fadeIn } from './FramerMotion/variants';
+import aboutimg from "../../assets/images/portfolio-image.jpg"
 
 const AboutMeSection = () => {
     return (
@@ -11,7 +12,7 @@ const AboutMeSection = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }} // triggers earlier on mobile
-            className="flex flex-col  md:flex-row lg:gap-56 gap-8 md:gap-12 w-full px-4 md:px-10"
+            className="flex flex-col  md:flex-row lg:gap-96 lg:mb-28 gap-8 md:gap-12 w-full px-4 md:px-10" 
         >
             <div className="flex-1 max-w-full">
                 <AboutMeText />

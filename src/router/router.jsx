@@ -5,6 +5,7 @@ import MainLayout from "../MainLayout/MainLayout";
 import Contact from "../Pages/Contact/Contact";
 import AboutMe from "../Pages/AboutMe/AboutMe";
 import Experience from "../Pages/Experience/Experience";
+import MySkiils from "../Pages/Skills/MySkiils";
 
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
        {
         path:"experience",
         element:<Experience></Experience>
+       },
+       {
+        path:"skills",
+        element:<MySkiils></MySkiils>
        }
 
       ]

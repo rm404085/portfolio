@@ -4,8 +4,8 @@ import experience from "../../assets/images/experience-image.png"
 const TopMiddleExperience = () => {
     return (
         <div>
-            <div className='lg:w-[90%] md:w-[50%] w-[80%]'>
-                <img src={experience}  className='' alt="" />
+            <div className='lg:w-[90%] md:w-[50%] mt-4 max-w-full'>
+                <img src={experience}  className='' alt="experience" />
             </div>
         </div>
     );

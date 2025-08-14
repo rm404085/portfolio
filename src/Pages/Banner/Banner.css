@@ -1,33 +1,65 @@
-/* Smooth animated gradient background */
+/* 🌌 Dark smooth animated premium gradient */
 .animated-gradient {
-    background: linear-gradient(60deg, #7bbd2a, #b5bb06, #1b064a, #fa4c07);
+    background: linear-gradient(60deg, 
+        #0f0f18,
+        #323951, /* Charcoal Blue */
+        #2c3e50, /* Dark Slate */
+        #4b0082, /* Indigo Purple */
+        #750250,
+        #e0fc0a   /* Deep Magenta */
+    );
     background-size: 300% 400%;
-    animation: gradientShift 5s ease infinite;
-  }
-  
-  @keyframes gradientShift {
-    0% {
-      background-position: 50% 70%;
+    animation: gradientShift 8s ease infinite;
+    padding: 40px 20px; /* Mobile spacing */
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden; /* Ensures background text doesn't overflow */
+}
+
+/* Tablet screens */
+@media (min-width: 640px) {
+    .animated-gradient {
+        padding: 60px 40px;
+        border-radius: 16px;
     }
-    50% {
-      background-position: 100% 50%;
+}
+
+/* Laptop & desktop */
+@media (min-width: 1024px) {
+    .animated-gradient {
+        padding: 80px 60px;
+        border-radius: 5px;
     }
-    100% {
-      background-position: 0% 30%;
-    }
-  }
-  
-  /* Floating image animation */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(10px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-  
-  .animate-float {
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+    0% { background-position: 50% 70%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 30%; }
+}
+
+/* Floating image animation */
+@keyframes float {
+    0%, 100% { transform: translateY(8px); }
+    50% { transform: translateY(-8px); }
+}
+
+.animate-float {
     animation: float 4s ease-in-out infinite;
-  }
-  
+}
+
+/* 💬 Background watermark text */
+.animated-gradient::before {
+    content: "Welcome My Portfolio";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(3rem, 10vw, 8rem); /* Responsive text size */
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05); /* Very light transparent text */
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none; /* Ignore mouse clicks */
+}

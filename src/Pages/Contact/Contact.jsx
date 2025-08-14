@@ -13,7 +13,7 @@ const Contact = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-bold mb-6">Get in Touch 📬</h1>
+          <h1 className="text-4xl font-bold mb-6">Get in Touch </h1>
           <p className="text-gray-300 leading-relaxed mb-8">
             Have a question or want to work together?  
             Fill out the form or reach out using the contact details below.

@@ -3,60 +3,65 @@ import { fadeIn } from "../AboutMeSection/FramerMotion/variants";
 import ProjectsText from "./ProjectText";
 import SingleProject from "./SingleProject";
 
+// ✅ Import images at the top
+import gadget from "/src/assets/images/website-img-1.jpg";
+import vocabulary from "/src/assets/images/vocabulary.png";
+import dream11 from "/src/assets/images/dream11-2.jpg";
+import tour from "/src/assets/images/website-img-4.jpg";
+import history from "/src/assets/images/website-img-3.jpg";
+import paddy from "/src/assets/images/R (1).jpeg";
+
 const projects = [
 
-  {
-    name: "Gadget Heaven",
-    year: "Sept2024",
+    {
+    name: "Tour Management System",
+    year: "May2025",
     align: "left",
-    image: "/src/assets/images/website-img-1.jpg",
-    link: "https://celadon-empanada-456bdc.netlify.app/",
-    uses: "Html, CSS, Tailwind, React, Javascript",
+    image: tour,
+    link: "https://playful-cascaron-550a47.netlify.app/",
+    uses: "HTML, CSS, Tailwind, React, Node.js, Express.js, MongoDB",
   },
-
   {
     name: "Learn Vocabulary",
     year: "Mar2025",
     align: "right",
-    image: "/src/assets/images/vocabulary.png",
+    image: vocabulary,
     link: "https://inspiring-bombolone-d0ed68.netlify.app",
-    uses: "Html, Css, Tailwind, React, Firebase, Mongodb",
+    uses: "HTML, CSS, Tailwind, React, Firebase, MongoDB",
   },
+  {
+    name: "Gadget Heaven",
+    year: "Sept2024",
+    align: "left",
+    image: gadget, // 
+    link: "https://celadon-empanada-456bdc.netlify.app/",
+    uses: "HTML, CSS, Tailwind, React, JavaScript",
+  },
+  
   {
     name: "Dream 11 Cricket Team",
     year: "Mar2024",
     align: "right",
-    image: "/src/assets/images/dream11-2.jpg",
+    image: dream11,
     link: "https://aquamarine-youtiao-34a16d.netlify.app/",
-    uses: "Html, Css, Javascript, React",
-  },
-  
-  {
-    name: "Tour Management System",
-    year: "May2025",
-    align: "left",
-    image: "/src/assets/images/website-img-4.jpg",
-    link: "https://playful-cascaron-550a47.netlify.app/",
-    uses: "Html, Css, Tailwind, React, Node.js, Express.js, Mongodb,"
-  },
-  
-   {
-    name: "History Fact Project ",
-    year: "Jan2025",
-    align: "right",
-    image: "/src/assets/images/website-img-3.jpg",
-    link: "https://celebrated-kleicha-28b0f1.netlify.app/",
-    uses: "Html, Css, Tailwind, React, Node.js, Express.js, Mongodb"
+    uses: "HTML, CSS, JavaScript, React",
   },
 
-  
+  {
+    name: "History Fact Project",
+    year: "Jan2025",
+    align: "right",
+    image: history,
+    link: "https://celebrated-kleicha-28b0f1.netlify.app/",
+    uses: "HTML, CSS, Tailwind, React, Node.js, Express.js, MongoDB",
+  },
   {
     name: "Paddy Animals",
     year: "Jan2024",
     align: "right",
-    image: "/src/assets/images/R (1).jpeg",
+    image: paddy,
     link: "https://delicate-rabanadas-6c14d7.netlify.app/",
-    uses: "Html, Css, Javascript"
+    uses: "HTML, CSS, JavaScript",
   },
 ];
 
@@ -72,19 +77,17 @@ const ProjectsMain = () => {
         <ProjectsText />
       </motion.div>
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-              link={project.link}
-              uses={project.uses}
-            />
-          );
-        })}
+        {projects.map((project, index) => (
+          <SingleProject
+            key={index}
+            name={project.name}
+            year={project.year}
+            align={project.align}
+            image={project.image} // ✅ Now always an imported variable
+            link={project.link}
+            uses={project.uses}
+          />
+        ))}
       </div>
     </div>
   );
