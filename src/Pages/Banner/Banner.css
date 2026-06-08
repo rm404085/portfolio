@@ -1,4 +1,4 @@
-/* 🌌 Dark smooth animated premium gradient */
+/* Dark smooth animated premium gradient */
 .animated-gradient {
     background: linear-gradient(60deg, 
         #0f0f18,
@@ -6,60 +6,61 @@
         #2c3e50, /* Dark Slate */
         #4b0082, /* Indigo Purple */
         #750250,
-        #e0fc0a   /* Deep Magenta */
+        #24251b   /* Deep Magenta */
     );
-    background-size: 300% 400%;
+    /* সাইজ ১০০% এর ভেতরে সীমাবদ্ধ করা হলো যাতে ডানে উপচে না পড়ে */
+    background-size: 100% 200%; 
     animation: gradientShift 8s ease infinite;
-    padding: 40px 20px; /* Mobile spacing */
-    border-radius: 12px;
+    padding: 20px 10px; /* Mobile safe padding */
+    box-sizing: border-box;
     position: relative;
-    overflow: hidden; /* Ensures background text doesn't overflow */
+    overflow: hidden; 
+    width: 100% !important;
 }
 
 /* Tablet screens */
 @media (min-width: 640px) {
     .animated-gradient {
-        padding: 60px 40px;
-        border-radius: 16px;
+        padding: 40px 20px;
     }
 }
 
 /* Laptop & desktop */
 @media (min-width: 1024px) {
     .animated-gradient {
-        padding: 80px 60px;
-        border-radius: 5px;
+        padding: 60px 40px;
+        border-radius: 0px; /* Hero section এর জন্য ফুল উইডথ ফিক্স */
     }
 }
 
 /* Gradient animation */
 @keyframes gradientShift {
-    0% { background-position: 50% 70%; }
+    0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
-    100% { background-position: 0% 30%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Floating image animation */
 @keyframes float {
-    0%, 100% { transform: translateY(8px); }
-    50% { transform: translateY(-8px); }
+    0%, 100% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
 }
 
 .animate-float {
     animation: float 4s ease-in-out infinite;
 }
 
-/* 💬 Background watermark text */
+/* 💬 Background watermark text - এটিকে রেসপন্সিভ এবং হিডেন সেফ করা হলো */
 .animated-gradient::before {
     content: "Welcome My Portfolio";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(3rem, 10vw, 8rem); /* Responsive text size */
+    font-size: clamp(2rem, 8vw, 6rem); 
     font-weight: 900;
-    color: rgba(255, 255, 255, 0.05); /* Very light transparent text */
+    color: rgba(255, 255, 255, 0.03); 
     white-space: nowrap;
     z-index: 0;
-    pointer-events: none; /* Ignore mouse clicks */
+    pointer-events: none; 
 }

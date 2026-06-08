@@ -8,7 +8,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 const MainLayout = () => {
     return (
     
-            <div className="min-h-screen  bg-white text-black dark:bg-gray-900 dark:text-white transition-all duration-300">
+            <div className="min-h-screen max-w-full  text-black dark:bg-gray-900 dark:text-white transition-all duration-300">
        <div>
         
       <Navbar></Navbar>

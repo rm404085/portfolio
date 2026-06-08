@@ -69,7 +69,7 @@ const Allskills = () => {
     ]
     return (
         <div>
-      <div className="flex max-w-[1200px] justify-center items-center relative">
+      <div className="flex w-full justify-center items-center relative">
         {skills.map((item, index) => {
           const IconComponent = item.icon;
           return (

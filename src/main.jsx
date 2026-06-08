@@ -4,21 +4,16 @@ import './index.css'
 import App from './App.jsx'
 import './App.css'
 import {
-  
   RouterProvider,
 } from "react-router-dom";
 import router from './router/router.jsx';
 import DarkModeToggle from './Shared/DarkMode/DarkModeToggle.jsx';
 
 createRoot(document.getElementById('root')).render(
- 
-   <StrictMode>
-     <div className='lg:max-w-[1200px] md:max-w-full max-w-full min-h-full mx-auto'>
-     
-     
-      
-     <RouterProvider router={router} />
-     </div>
-  </StrictMode>
- ,
+  <StrictMode>
+    
+    <div className='w-screen min-h-screen overflow-x-hidden bg-transparent mx-auto'>
+      <RouterProvider router={router} />
+    </div>
+  </StrictMode>,
 )

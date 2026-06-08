@@ -22,7 +22,7 @@ const skills = [
 const MySkills = () => {
   return (
     <section className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-16 px-6 sm:px-10 text-white">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

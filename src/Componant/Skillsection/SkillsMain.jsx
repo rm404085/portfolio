@@ -21,8 +21,8 @@ const SkillsMain = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.7 }}
-            className='max-w-full px-4 mt-16 mx-auto min-h-[300px] relative overflow-hidden'>
-                <SkillsText></SkillsText>
+            className='max-w-full px-4 mt-2 mx-auto min-h-[50px] relative overflow-hidden'>
+                {/* <SkillsText></SkillsText> */}
             </motion.div>
             <div className='absolute hidden lg:block  -transation-x-[50%] '>
                <Allskills></Allskills>

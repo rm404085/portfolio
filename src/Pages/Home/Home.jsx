@@ -8,32 +8,35 @@ import SubSkill from '../../Componant/Skillsection/SubSkill';
 import ExperienceMain from '../../Componant/Experiene/ExperienceMain';
 import ProjectsMain from '../../Componant/ProjectSection/ProjectMain';
 import ContactMeMain from '../../Componant/ContactUs/ContactMeMain';
+import MySkills from '../Skills/MySkiils';
 
 const Home = () => {
     return (
-        <div className="">
-        <Banner></Banner>
-        <AboutMeSection></AboutMeSection>
-        <SkillsMain></SkillsMain>
-
-        
-      <div className='mt-28'>
-      <SubSkill></SubSkill>
-      </div>
-
-      <div className='mt-32'>
-        <ExperienceMain></ExperienceMain>
-      </div>
-      
+       
+        <div className="w-full max-w-full min-h-screen bg-transparent overflow-x-hidden relative">
             
-         <div>
-           <ProjectsMain></ProjectsMain>
-         </div>
-         <div>
-        <ContactMeMain></ContactMeMain>
-      </div>
-        
-      </div>
+            <Banner />
+            <AboutMeSection />
+            <MySkills />
+            <SkillsMain />
+
+            <div className='mt-28 w-full max-w-full overflow-hidden'>
+                <SubSkill />
+            </div>
+
+            <div className='mt-32 w-full max-w-full overflow-hidden'>
+                <ExperienceMain />
+            </div>
+            
+            <div className='w-full max-w-full overflow-hidden'>
+                <ProjectsMain />
+            </div>
+
+            <div className='w-full max-w-full overflow-hidden'>
+                <ContactMeMain />
+            </div>
+            
+        </div>
     );
 };
 

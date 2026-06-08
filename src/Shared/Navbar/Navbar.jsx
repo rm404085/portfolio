@@ -8,6 +8,8 @@ import "./Navbar.css";
 import resume from "../../assets/resume/my_resume.pdf"
 
 const Navbar = () => {
+
+  const MotionDiv = motion.div;
   const links = (
     <>
       <NavLink
@@ -45,8 +47,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="top-0 left-0 z-20 w-full   bg-white/85  shadow-md">
-      <div className="navbar max-w-6xl mx-auto text-cyan-700 rounded-full border border-s-8 px-2 sm:px-4">
+    <div className="top-0 left-0 z-20 w-full   shadow-md">
+      <div className="navbar max-w-5xl mx-auto text-cyan-700 rounded-full  px-2 sm:px-4">
         
         {/* Start - Logo & Mobile Menu */}
         <div className="navbar-start">
@@ -74,7 +76,7 @@ const Navbar = () => {
         </div>
 
         {/* Center - Menu items (hidden on mobile) */}
-        <motion.div
+        <MotionDiv
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           whileInView="show"
@@ -82,21 +84,31 @@ const Navbar = () => {
           className="navbar-center hidden lg:flex"
         >
           <ul className="menu gap-4 xl:gap-6 menu-horizontal px-1">{links}</ul>
-        </motion.div>
+        </MotionDiv>
 
-        {/* End - DarkMode + Button */}
-        <div className="navbar-end flex items-center gap-2 sm:gap-4">
-          <DarkModeToggle />
-          <div className="relative  w-28 sm:w-36 md:w-40 h-10 sm:h-12 md:h-14 overflow-hidden rounded-xl border border-gray-200 shadow-md before:absolute before:top-[-90%] before:right-[-80%] before:bottom-[-80%] before:left-[-80%] before:bg-[conic-gradient(transparent,transparent,#00a6ff)] before:animate-spin-slow">
-            <a href={resume }>
-              <button className="absolute  flex items-center justify-center w-full h-full rounded-xl text-white text-sm sm:text-base font-semibold bg-gradient-to-r from-slate-900 to-purple-700 hover:scale-105 transition-transform">
-              Hire Me 
-              <FaLocationArrow className="ml-1 hidden md:block text-yellow-400" />
-              
-            </button>
-            </a>
-          </div>
-        </div>
+       
+     <div className="navbar-end flex items-center gap-2 sm:gap-4">
+  <DarkModeToggle />
+  
+
+  <div className="relative w-24 sm:w-32 md:w-36 h-10 sm:h-12 flex items-center justify-center overflow-hidden rounded-xl  border border-gray-800 shadow-lg group">
+    
+   
+    <div className="absolute inset-[-100%] bg-[conic-gradient(transparent,transparent,#00a6ff)] animate-[spin_4s_linear_infinite]" />
+    
+   
+    <a 
+      href={resume} 
+      className="absolute inset-[1.5px] flex items-center justify-center rounded-[11px] text-white text-xs sm:text-sm md:text-base font-semibold bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] hover:from-[#1e3a8a] hover:to-[#2563eb] transition-all duration-300 z-10"
+    >
+      <span className="flex items-center gap-1">
+        Hire Me 
+        <FaLocationArrow className="text-yellow-400 text-[10px] sm:text-xs hidden sm:inline-block animate-pulse" />
+      </span>
+    </a>
+
+  </div>
+</div>
       </div>
     </div>
   );
