@@ -8,7 +8,7 @@
         #750250,
         #24251b   /* Deep Magenta */
     );
-    /* সাইজ ১০০% এর ভেতরে সীমাবদ্ধ করা হলো যাতে ডানে উপচে না পড়ে */
+    
     background-size: 100% 200%; 
     animation: gradientShift 8s ease infinite;
     padding: 20px 10px; /* Mobile safe padding */
@@ -29,7 +29,7 @@
 @media (min-width: 1024px) {
     .animated-gradient {
         padding: 60px 40px;
-        border-radius: 0px; /* Hero section এর জন্য ফুল উইডথ ফিক্স */
+        border-radius: 0px;
     }
 }
 
@@ -50,7 +50,6 @@
     animation: float 4s ease-in-out infinite;
 }
 
-/* 💬 Background watermark text - এটিকে রেসপন্সিভ এবং হিডেন সেফ করা হলো */
 .animated-gradient::before {
     content: "Welcome My Portfolio";
     position: absolute;

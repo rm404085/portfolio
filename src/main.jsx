@@ -12,7 +12,7 @@ import DarkModeToggle from './Shared/DarkMode/DarkModeToggle.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
-    <div className='w-screen min-h-screen overflow-x-hidden bg-transparent mx-auto'>
+    <div className='w-full min-h-screen overflow-x-hidden bg-transparent mx-auto'>
       <RouterProvider router={router} />
     </div>
   </StrictMode>,

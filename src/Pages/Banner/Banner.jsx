@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     
     <div className="hero animated-gradient text-white mb-36 min-h-screen w-full max-w-full overflow-x-hidden">
-      <div className="hero-content flex-col animate-float lg:flex-row-reverse max-w-5xl mx-auto w-full px-4">
+      <div className="hero-content flex-col animate-float lg:flex-row-reverse max-w-5xl mx-auto w-full ">
 
         {/* ——— Image + Glow Wrapper ——— */}
         <MotionDiv
