@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <div className="top-0 left-0 z-20 w-full   shadow-md">
-      <div className="navbar max-w-5xl mx-auto text-cyan-700 rounded-full  px-2 sm:px-4">
+      <div className="navbar max-w-5xl mx-auto   text-cyan-700 rounded-full  px-2 sm:px-4">
         
         {/* Start - Logo & Mobile Menu */}
         <div className="navbar-start">

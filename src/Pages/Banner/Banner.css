@@ -1,15 +1,14 @@
 /* Dark smooth animated premium gradient */
 .animated-gradient {
-    background: linear-gradient(60deg, 
-        #0f0f18,
-        #323951, /* Charcoal Blue */
-        #2c3e50, /* Dark Slate */
-        #4b0082, /* Indigo Purple */
-        #750250,
-        #24251b   /* Deep Magenta */
+background: linear-gradient(60deg, 
+        #090d16, /* বেইজ ডার্ক নাইট */
+        #141526, /* মিস্টিক চারকোল ব্লু */
+        #22132e, /* রিচ ডিপ ভায়োলেট */
+        #2a0845, /* রয়েল ডিপ পার্পেল */
+        #111827, /* অলমোস্ট ব্ল্যাক */
+        #050b14  /* ডিপ ওশেন ডার্ক */
     );
-    
-    background-size: 100% 200%; 
+    background-size: 300% 800%; 
     animation: gradientShift 8s ease infinite;
     padding: 20px 10px; /* Mobile safe padding */
     box-sizing: border-box;
